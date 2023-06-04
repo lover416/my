@@ -90,7 +90,7 @@ if __name__ == '__main__':
     data = pd.read_excel(file_path)
     print("数据源\n", data)
     # 待预测数据
-    new_data = pd.DataFrame({"有房": "是", "婚姻状况 ": "已婚"}, index=[0])
+    new_data = pd.DataFrame({"买车": "是", "孩子 ": "有"}, index=[0])
     cate_dict, result_dict = handle_data(data)
     print(cate_dict)
     print(result_dict)
